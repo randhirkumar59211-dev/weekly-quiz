@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- START SCREEN -->
+    <div class="start-screen" id="startScreen">
+        <h1>WEEKLY QUIZ</h1>
+        <p>Test Your Knowledge</p>
+
+        <button onclick="startQuiz()">START QUIZ</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div class="quiz-container" id="quizContainer">
+
+        <h1>Weekly Quiz</h1>
+
+        <div id="questionBox"></div>
+
+        <button id="nextBtn" onclick="nextQuestion()">NEXT</button>
+
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div class="result-box" id="resultBox">
+
+        <h1>QUIZ COMPLETED</h1>
+
+        <h2>Your Score</h2>
+
+        <p id="scoreText"></p>
+
+        <button onclick="location.reload()">PLAY AGAIN</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
